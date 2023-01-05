@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  emqx:
+    image: emqx/emqx:latest
+    restart: always
+    environment:
+      EMQX_HOST: 127.0.0.1
+    ports:
+      - 18083:18083
+      - 1883:1883
+      - 8083:8083
+    volumes:
+      - vol-emqx-data:/opt/emqx/data
+      - vol-emqx-etc:/opt/emqx/etc
+      - vol-emqx-log:/opt/emqx/log
+
+volumes:
+  vol-emqx-data:
+  vol-emqx-etc:
+  vol-emqx-log:
