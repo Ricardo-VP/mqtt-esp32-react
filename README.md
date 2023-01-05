@@ -7,7 +7,8 @@ Dashboard App - Monitor temperature, a status of a led and a counter that is bei
 ## Technologies
 
 1. MQTT Broker using EMQX
-2. Client App built with: 
+2. ESP32 with C++ using Arduino IDE
+3. Client App built with: 
   - React
   - TypeScript
   - Vite
